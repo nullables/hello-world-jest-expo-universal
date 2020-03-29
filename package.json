@@ -6,27 +6,30 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest",
+    "build:bugdemo": "expo build:android --release-channel bugdemo",
+    "publish:bugdemo": "expo publish --release-channel bugdemo"
   },
   "jest": {
     "preset": "jest-expo/universal"
   },
   "dependencies": {
-    "expo": "~36.0.0",
+    "expo": "~36.0.2",
+    "expo-cli": "^3.16.1",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
     "react-native-screens": "2.0.0-alpha.12",
     "react-native-web": "~0.11.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.9.0",
     "@types/jest": "^24.0.25",
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
-    "babel-preset-expo": "~8.0.0",
+    "babel-preset-expo": "^8.1.0",
     "jest-expo": "^36.0.1",
-    "typescript": "~3.6.3"
+    "typescript": "^3.8.3"
   },
   "private": true
 }

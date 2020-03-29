@@ -1,14 +1,11 @@
 {
   "expo": {
-    "name": "hello-world",
-    "slug": "hello-world",
-    "privacy": "public",
+    "name": "helloworld",
+    "slug": "helloworld",
+    "scheme": "helloworld",
+    "privacy": "unlisted",
     "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,11 +17,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "app.helloworld",
+      "versionCode": 1
     }
   }
 }
